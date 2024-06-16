@@ -2,6 +2,7 @@ import numpy as np
 from objects import arbitrary_matrix
 
 
+# Function to check if the given matrix is a square matrix.
 def is_square_matrix(matrix):
     if matrix.shape[0] != matrix.shape[1]:
         print("Matrix is not square")
@@ -9,6 +10,7 @@ def is_square_matrix(matrix):
     return True
 
 
+# Function to find the eigenvalues and eigenvectors of a given square matrix.
 def find_eigenvalues_eigenvectors(matrix):
     if not is_square_matrix(matrix):
         return
@@ -17,6 +19,7 @@ def find_eigenvalues_eigenvectors(matrix):
     return eigenvalues, eigenvectors
 
 
+# Function to ceck the equality A * v = λ * v for each eigenvalue and its corresponding eigenvector.
 def check_equality(matrix, eigenvalues, eigenvectors):
     for i in range(len(eigenvalues)):
         eigenvalue = eigenvalues[i]
