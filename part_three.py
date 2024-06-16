@@ -28,6 +28,8 @@ for row in key_matrix:
     print(row)
 print()
 
+print("Original message: ", message)
+
 encrypted_message = encrypt_message(message, key_matrix)
 print(f"Encrypted message: \n{encrypted_message}")
 print()
