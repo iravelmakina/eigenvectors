@@ -1,4 +1,5 @@
 import numpy as np
+from objects import arbitrary_matrix
 
 
 def is_square_matrix(matrix):
@@ -23,7 +24,8 @@ def check_equality(matrix, eigenvalues, eigenvectors):
         left_side = np.dot(matrix, eigenvector)
         right_side = np.dot(eigenvalue, eigenvector)
 
-        if np.allclose(left_side, right_side): # normalized eigenvectors are used because they have nice mathematical properties and make computations easier
+        if np.allclose(left_side, right_side): # normalized eigenvectors are used because they have nice mathematical
+            # properties and make computations easier
             print(
                 f"Eigenvalue λ = {np.round(eigenvalue, 2)} and corresponding eigenvector v = {np.round(eigenvector, 2)} "
                 f"satisfy equality A * v = λ * v")
