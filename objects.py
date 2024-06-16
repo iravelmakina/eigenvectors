@@ -1,8 +1,8 @@
 import numpy as np
+import random
 
-arbitrary_matrix = np.array([[1, 2, 3],
-                             [4, 5, 6],
-                             [7, 8, 9]])
+
+arbitrary_matrix = np.random.randint(0, 256, (lambda n=random.randint(1, 5): (n, n))())
 
 image = 'image.png'
 
