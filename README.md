@@ -5,7 +5,7 @@ This repository contains solutions for lab tasks focusing on eigenvalues, eigenv
 ## Part One: Eigenvalues and Eigenvectors Calculation
 
 ### Task Description
-Write a function that takes a square matrix and returns its eigenvalues and eigenvectors using the NumPy library. Additionally, verify the equality \(A \cdot v = \lambda \cdot v\) for each eigenvalue and corresponding eigenvector.
+Write a function that takes a square matrix and returns its eigenvalues and eigenvectors using the NumPy library. Additionally, verify the equality A v = λ v for each eigenvalue and corresponding eigenvector.
 
 ### Recommended Libraries
 - NumPy
