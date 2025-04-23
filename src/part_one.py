@@ -1,5 +1,5 @@
 import numpy as np
-from objects import arbitrary_matrix
+from src.objects import arbitrary_matrix
 
 
 # Function to check if the given matrix is a square matrix
