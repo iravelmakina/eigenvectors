@@ -1,83 +1,73 @@
-# Eigenvectors & Eigenvalues program
+# Eigenvectors & Eigenvalues Program
 
-This repository contains solutions for lab tasks focusing on eigenvalues, eigenvectors, image compression using PCA, and cryptography using diagonalization.
+This repository contains a set of tools and demonstrations related to eigenvalues, eigenvectors, PCA-based image compression, and cryptographic operations using matrix diagonalization.
+
+---
 
 ## Part One: Eigenvalues and Eigenvectors Calculation
 
-### Task Description
-Write a function that takes a square matrix and returns its eigenvalues and eigenvectors using the NumPy library. Additionally, verify the equality A v = λ v for each eigenvalue and corresponding eigenvector.
+### Description
+A Python module that computes the eigenvalues and eigenvectors of a square matrix using NumPy. It also verifies the equality \( A \cdot v = \lambda \cdot v \) for each eigenpair.
 
-### Recommended Libraries
+### Libraries Used
 - NumPy
 
-### Useful Resources
-- [Video on Eigenvalues and Eigenvectors](#)
+---
 
 ## Part Two: Image Compression Using PCA
 
-### Task Description
-Implement a function to reduce image dimensionality using Principal Component Analysis (PCA).
+### Description
+A Jupyter Notebook demonstrating image compression through Principal Component Analysis (PCA). The process involves converting a color image to grayscale, applying PCA, and reconstructing the image using a reduced number of principal components.
 
-### Recommended Libraries
+### What is PCA?
+Principal Component Analysis is a technique used to reduce the dimensionality of data while retaining the most important features. In image processing, PCA finds the eigenvectors of the covariance matrix of pixel values to extract dominant patterns, enabling efficient compression and reconstruction.
+
+### Steps Covered
+1. Display the original image and its dimensions.
+2. Convert the image to grayscale and analyze its shape.
+3. Apply PCA to extract the most significant components.
+4. Visualize explained variance and determine component count for optimal compression.
+5. Reconstruct the image using various numbers of principal components and visualize the results.
+
+### Libraries Used
 - NumPy
 - Matplotlib
 - Scikit-learn
 - Jupyter Notebook
 
-### Useful Resources
-- [Introduction to PCA](#)
-- [Forum Discussion on PCA](#)
-
-### What is PCA?
-Principal Component Analysis (PCA) is a technique used in image processing to reduce its dimensionality. PCA identifies the principal components of an image by finding the eigenvectors of the covariance matrix of pixel values. These eigenvectors represent the most important features or patterns in the image.
-
-By reducing the dimensionality of image data using PCA, it becomes easier to compress and store images, as well as perform operations such as image recognition and classification.
-
-### Task Steps
-1. **Display the Initial Color Image:**
-   - Show the original color image and a vector containing its dimensions in pixels and the number of primary color channels used.
-
-2. **Convert Image to Black and White:**
-   - Transform the image to black and white, then display its size and the number of color channels (0.25 points).
-
-3. **Apply PCA:**
-   - Apply PCA to the black-and-white image matrix. Display the cumulative variance and determine the number of components needed to cover 95% of the variance. Use library functions (NumPy recommended) (0.75 points).
-   - Display a plot of the process (0.5 points).
-
-4. **Reconstruct Black and White Image:**
-   - Reconstruct the black-and-white image using the limited number of components found in the previous step. Display the resulting image. For 95% coverage, a clearer image is expected, maintaining essential elements but possibly lacking fine details (1 point).
-
-5. **Reconstruct Image with Different Number of Components:**
-   - Reconstruct the image with various numbers of components and display the results. Try using more components and display the corresponding result. Check if a clearer image is obtained, and compare it with using fewer components (2 points).
+---
 
 ## Part Three: Cryptography Using Diagonalization
 
-### Task Description
-Use diagonalization to decrypt codes. It is recommended to use the NumPy library.
+### Description
+This module demonstrates encryption and decryption of messages using matrix diagonalization. A key matrix is used to encrypt a text message, and its inverse is used to decrypt it.
 
-### Recommended Libraries
+### Features
+- Encrypt a message by diagonalizing the key matrix and applying it to a message vector.
+- Decrypt the encrypted message using inverse diagonalization.
+- Display the original, encrypted, and decrypted messages for verification.
+
+### Libraries Used
 - NumPy
 
-### Useful Resources
-- [Introduction to Linear Algebra in Cryptography](#)
-- [Video on Cryptography](#)
+---
 
-### Task Steps
-1. **Create Decryption Function:**
-   - Create a function `decrypt_message(encrypted_vector, key_matrix)` that decrypts an encrypted vector using the key matrix and the inverse diagonalization operation.
+## Usage
 
-2. **Verify Function with Example:**
-   - Test the developed functions with an example using a randomly generated key matrix and a text message.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/iravelmakina/eigenvectors.git
+   cd eigenvectors
+   ```
 
-### Example Execution
-- **Original Message:** Hello, World!
-- **Encrypted Message:** [118703.+1.04957181e-11j 180926.+1.50897913e-11j 149312.+1.90968912e-11j 161873.+1.52982299e-11j 188078.+1.70487245e-12j 145036.+1.64536004e-11j 139370.+4.15241913e-11j 195037.+1.51003306e-11j 155629.+1.38144125e-11j 206859.+1.38439864e-11j 145588.+1.95891393e-11j 130163.+1.55598216e-11j 176423.+1.26512259e-11j]
-- **Decrypted Message:** Hello, World!
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Usage Instructions
-1. Clone the repository to your local machine.
-2. Install the required libraries as specified.
-3. Run the program according to the instructions provided in each part.
+3. Navigate to `src/` to run Python modules or open `notebooks/part_two.ipynb` for the PCA visualization.
+
+---
 
 ## Dependencies
 - Python 3.x
@@ -86,5 +76,10 @@ Use diagonalization to decrypt codes. It is recommended to use the NumPy library
 - Scikit-learn
 - Jupyter Notebook
 
+---
+
+## License
+This project is open-source under the **MIT License**.
+
 ## Contributors
-- @iravelmakina
+- [@iravelmakina](https://github.com/iravelmakina)
