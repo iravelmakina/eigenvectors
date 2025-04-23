@@ -1,7 +1,7 @@
 import numpy as np
 
-from src.objects import key_matrix
-from src.objects import message
+from objects import key_matrix
+from objects import message
 
 
 # Function to encrypt message
