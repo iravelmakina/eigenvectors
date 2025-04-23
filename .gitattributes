@@ -1,0 +1,11 @@
+# Jupyter notebooks
+*.ipynb diff=jupyternotebook
+
+# Python scripts
+*.py text eol=lf
+
+# Images
+*.png binary
+
+# Optional: keep line endings consistent
+*.txt text eol=lf
