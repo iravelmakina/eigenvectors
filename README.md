@@ -79,7 +79,11 @@ This module demonstrates encryption and decryption of messages using matrix diag
 ---
 
 ## License
-This project is open-source under the **MIT License**.
 
-## Contributors
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contributor
+
 - [@iravelmakina](https://github.com/iravelmakina)
